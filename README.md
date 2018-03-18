@@ -1,24 +1,32 @@
-# README
+# 使用说明
+- 1. 依赖安装
+  - ruby
+  - sqlite3 -- sudo apt install sqlite3 libsqlite3-dev
+  
+  - rails 框架 -- sudo gem install rails -v 4.2.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- 2. clone 本工程到本地
+```
+git clone https://github.com/asu126/Rails.git
+cd Rails
+```
 
-Things you may want to cover:
+- 3. gem 包安裝
+```
+cd Rails && bundle install --path vendor/bundle
+```
 
-* Ruby version
+- 4. 运行
+```
+rails db:migrate RAILS_ENV=development
+rails server
+```
 
-* System dependencies
+- 5. 浏览器打开如下页面
+```
+http://localhost:3000
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 参考文档
+- [Ruby on Rails 指南](https://ruby-china.github.io/rails-guides/v4.1/index.html)
+- [Ruby on Rails 教程](https://railstutorial-china.org/rails42/)
